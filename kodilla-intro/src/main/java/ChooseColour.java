@@ -32,6 +32,4 @@ public class ChooseColour {
         }
         System.out.println(result);
     }
-
-
 }
