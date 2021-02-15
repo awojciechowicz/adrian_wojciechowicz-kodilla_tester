@@ -1,3 +1,5 @@
+package Modul_2;
+
 public class CalcApplication {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();                                 // [1]
@@ -9,7 +11,7 @@ public class CalcApplication {
 
 
 
-//        Calculator calculator2 = new Calculator();                                // [3]
+//        Modul_2.Calculator calculator2 = new Modul_2.Calculator();                                // [3]
 //        System.out.println(calculator2.counter);
     }
 }

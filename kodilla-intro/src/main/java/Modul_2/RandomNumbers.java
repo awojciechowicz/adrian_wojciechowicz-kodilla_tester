@@ -1,3 +1,5 @@
+package Modul_2;
+
 import java.util.Random;
 
 public class RandomNumbers {
