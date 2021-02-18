@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework.geometry;
 
 public class EquilateralTriangle extends Shape{
     private double sideLength;

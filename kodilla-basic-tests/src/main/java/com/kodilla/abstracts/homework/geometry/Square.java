@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework.geometry;
 
 public class Square extends Shape{
     private double length;

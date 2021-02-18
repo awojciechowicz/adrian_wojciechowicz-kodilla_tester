@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework.employees;
 
 public class Tester extends Job{
     public Tester(double salary, String responsibilities) {

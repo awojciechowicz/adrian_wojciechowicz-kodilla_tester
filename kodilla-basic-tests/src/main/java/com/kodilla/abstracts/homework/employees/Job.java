@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework.employees;
 
 public abstract class Job {
     private double salary;

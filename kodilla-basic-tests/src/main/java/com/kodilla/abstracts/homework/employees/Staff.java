@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework.employees;
 
 public class Staff {
     public static void main(String[] args) {

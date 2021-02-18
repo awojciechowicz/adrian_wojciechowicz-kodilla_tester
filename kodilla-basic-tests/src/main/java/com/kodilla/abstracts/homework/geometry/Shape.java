@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homework;
+package com.kodilla.abstracts.homework.geometry;
 
 public abstract class Shape {
     private String name;
