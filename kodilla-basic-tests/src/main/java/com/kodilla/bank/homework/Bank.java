@@ -2,18 +2,9 @@ package com.kodilla.bank.homework;
 
 public class Bank {
     private CashMachine[] cashMachines;
-    private int sizeBank = 0;
 
     public Bank(CashMachine[] cashMachines) {
         this.cashMachines = cashMachines;
-        this.sizeBank = 0;
-    }
-
-    public void newCashMachine() {
-        this.sizeBank++;
-        CashMachine[] NewTab = new CashMachine[this.sizeBank];
-        System.arraycopy(cashMachines, 0, NewTab, 0, cashMachines.length);
-        this.cashMachines = NewTab;
     }
 
     public double getTotalBalanceFromAllCashMachines() {
@@ -78,9 +69,5 @@ public class Bank {
 
     public CashMachine[] getCashMachines() {
         return cashMachines;
-    }
-
-    public int getSizeBank() {
-        return sizeBank;
     }
 }
