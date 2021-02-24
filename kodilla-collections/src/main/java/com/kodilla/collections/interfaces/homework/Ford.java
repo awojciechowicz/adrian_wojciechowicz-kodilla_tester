@@ -13,6 +13,11 @@ public class Ford implements Car {
     }
 
     @Override
+    public void increaseSpeed(int acceleration) {
+        speed += acceleration;
+    }
+
+    @Override
     public void increaseSpeed() {
         speed += 10;
     }

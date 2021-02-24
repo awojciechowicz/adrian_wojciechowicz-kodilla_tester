@@ -13,6 +13,11 @@ public class Volkswagen implements Car {
     }
 
     @Override
+    public void increaseSpeed(int acceleration) {
+        speed += acceleration;
+    }
+
+    @Override
     public void increaseSpeed() {
         speed += 15;
     }

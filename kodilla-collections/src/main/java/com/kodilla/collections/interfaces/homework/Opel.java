@@ -18,6 +18,11 @@ public class Opel implements Car {
     }
 
     @Override
+    public void increaseSpeed(int acceleration) {
+        speed += acceleration;
+    }
+
+    @Override
     public void decreaseSpeed() {
         speed -= 5;
     }
