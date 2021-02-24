@@ -25,7 +25,7 @@ public class CarsApplication {
     public static Car drawCar() {
         Random random = new Random();
         int drawnCarBrand = random.nextInt(3);
-        acceleration = (int)(random.nextDouble() * 150);
+        acceleration = random.nextInt(151);
         if (drawnCarBrand == 0)
             return new Opel();
         else if (drawnCarBrand == 1)
