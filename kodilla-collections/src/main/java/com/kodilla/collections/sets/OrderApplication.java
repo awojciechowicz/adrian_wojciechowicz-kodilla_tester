@@ -12,8 +12,7 @@ public class OrderApplication {
         orders.add(new Order("1/2019", "Iron", 1.0));
 
         System.out.println(orders.size());
-        for (Order order : orders
-             ) {
+        for (Order order : orders) {
             System.out.println(order);
         }
     }
