@@ -13,6 +13,6 @@ public class WarehouseTestSuite {
         // when
         Order order = warehouse.getOrder("12");
         // then
-        assertEquals(order, new Order("12"));
+        assertEquals(new Order("12"), order);
     }
 }

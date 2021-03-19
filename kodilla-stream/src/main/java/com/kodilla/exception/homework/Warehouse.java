@@ -24,6 +24,7 @@ public class Warehouse {
 //        else
 //            throw new OrderDoesntExistException();
                 .findFirst()
-                .orElseThrow(OrderDoesntExistException::new);
+//                .orElseThrow(OrderDoesntExistException::new);
+                .orElseThrow(() -> new OrderDoesntExistException("Order " + number + " does not exist"));
     }
 }
