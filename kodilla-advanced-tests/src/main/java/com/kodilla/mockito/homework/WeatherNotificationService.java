@@ -11,9 +11,7 @@ public class WeatherNotificationService {
     }
 
     public void addClient(WeatherLocation weatherLocation, WeatherClient weatherClient) {
-        List<WeatherClient> weatherClients = this.weatherLocations.get(weatherLocation);
-        weatherClients.add(weatherClient);
-        weatherLocations.put(weatherLocation, weatherClients);
+        weatherLocations.get(weatherLocation).add(weatherClient);
     }
 
     public void sendNotificationInLocation(WeatherLocation weatherLocation, WeatherNotification weatherNotification) {
