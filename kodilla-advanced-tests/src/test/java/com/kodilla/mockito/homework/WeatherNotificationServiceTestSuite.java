@@ -84,11 +84,6 @@ class WeatherNotificationServiceTestSuite {
         weatherNotificationService.addClient(weatherLocation, weatherClient1);
         weatherNotificationService.addClient(weatherLocation1, weatherClient2);
         weatherNotificationService.removeLocationFromTheList(weatherLocation);
-        weatherNotificationService.sendNotificationInLocation(weatherLocation, weatherNotification);
-        weatherNotificationService.sendNotificationInLocation(weatherLocation1, weatherNotification);
-        Mockito.verify(weatherClient, Mockito.never()).receive(weatherNotification);
-        Mockito.verify(weatherClient1, Mockito.never()).receive(weatherNotification);
-        Mockito.verify(weatherClient2, Mockito.times(1)).receive(weatherNotification);
         System.out.println(weatherNotificationService.getSizeOfMap());
     }
 }
