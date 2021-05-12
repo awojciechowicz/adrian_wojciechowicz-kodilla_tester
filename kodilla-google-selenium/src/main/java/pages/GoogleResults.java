@@ -15,7 +15,7 @@ public class GoogleResults extends AbstractPage{
     @FindBy(css = "div[class='g']")
     private List<WebElement> results;
 
-    @FindBy(tagName = "cite")
+    @FindBy(tagName = "div[class='g'] > cite")
     private List<WebElement> links;
 
     public GoogleResults(WebDriver driver) {
@@ -26,6 +26,7 @@ public class GoogleResults extends AbstractPage{
     public int iSeeResults() {
         System.out.println("I see results");
         System.out.println(results.size());
+        System.out.println(links.size());
         return results.size();
     }
 
