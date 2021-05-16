@@ -35,9 +35,6 @@ public class WalletSteps implements En {
         });
 
         When("I check the balance of my wallet", () -> {
-//            Tak naprawdę najlepiej by było, gdyby tu znalazło się wywołanie metody klasy Cashier,
-//            która pobrałaby saldo z portfela, ale taka metoda w tej klasie nie jest zdefiniowana.
-//            Jeśli zdążę, to spróbuję rozszerzyć tę klasę o moje pomysły.
         });
 
         When("I withdraw $200", () -> {
