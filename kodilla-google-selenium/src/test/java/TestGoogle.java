@@ -8,23 +8,23 @@ import pages.GoogleSearch;
 
 public class TestGoogle {
 
-    WebDriver driver;
-
-    @Before
-    public void testSetup() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.navigate().to("http://www.google.com");
-    }
-
-    @After
-    public void tearDown() {
-        driver.close();                   // [1]
-    }
-
-    @Test
-    public void testGooglePage() {
-        GoogleSearch googleSearch = new GoogleSearch(driver);
-        googleSearch.searchResults();
-    }
+//    WebDriver driver;
+//
+//    @Before
+//    public void testSetup() {
+//        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+//        driver = new ChromeDriver();
+//        driver.navigate().to("http://www.google.com");
+//    }
+//
+//    @After
+//    public void tearDown() {
+//        driver.close();                   // [1]
+//    }
+//
+//    @Test
+//    public void testGooglePage() {
+//        GoogleSearch googleSearch = new GoogleSearch(driver);
+//        googleSearch.searchResults();
+//    }
 }
