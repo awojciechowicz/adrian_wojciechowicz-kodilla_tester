@@ -110,4 +110,54 @@ public class BankTestSuite {
         assertEquals(-250.0, bank.getAveragePayOutFromAllCashMachines(),0.01);
     }
 
+    @Test
+    public void shouldCalculateSumOfPayInOfAllCashmachines() {
+
+        //Given
+        CashMachine cashMachine1 = new CashMachine();
+        cashMachine1.newTransaction(200);
+        cashMachine1.newTransaction(900);
+        cashMachine1.newTransaction(-300);
+        CashMachine cashMachine2 = new CashMachine();
+        cashMachine2.newTransaction(400);
+        cashMachine2.newTransaction(-200);
+        CashMachine cashMachine3 = new CashMachine();
+        cashMachine3.newTransaction(1500);
+
+        CashMachine[] cashMachines = {cashMachine1, cashMachine2, cashMachine3};
+
+        Bank bank = new Bank(cashMachines);
+
+        //When
+        double result = bank.getSumOfPayInFromAllCashMachines();
+
+        //Then
+        assertEquals(3000, result);
+    }
+
+    @Test
+    public void shouldCalculateSumOfPayOutOfAllCashmachines() {
+
+        //Given
+        CashMachine cashMachine1 = new CashMachine();
+        cashMachine1.newTransaction(200);
+        cashMachine1.newTransaction(900);
+        cashMachine1.newTransaction(-300);
+        CashMachine cashMachine2 = new CashMachine();
+        cashMachine2.newTransaction(400);
+        cashMachine2.newTransaction(-200);
+        CashMachine cashMachine3 = new CashMachine();
+        cashMachine3.newTransaction(1500);
+
+        CashMachine[] cashMachines = {cashMachine1, cashMachine2, cashMachine3};
+
+        Bank bank = new Bank(cashMachines);
+
+        //When
+        double result = bank.getSumOfPayOutFromAllCashMachines();
+
+        //Then
+        assertEquals(-500, result);
+    }
+
 }
